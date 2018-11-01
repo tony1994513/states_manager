@@ -77,9 +77,9 @@ find_package(catkin REQUIRED COMPONENTS
    DEPENDENCIES
    std_msgs  # Or other packages containing msgs
    myo_driver
-   baxter_core_msgs
    sensor_msgs
    tf2_msgs
+   baxter_core_msgs
  )
 
 ################################################
@@ -114,7 +114,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES states_manager
-  CATKIN_DEPENDS message_runtime rospy std_msgs myo_driver 
+  CATKIN_DEPENDS message_runtime rospy std_msgs myo_driver baxter_core_msgs tf2_msgs sensor_msgs
 
 #  DEPENDS system_lib
 )
